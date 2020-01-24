@@ -2,7 +2,7 @@
 const buttons = document.querySelectorAll(".btn.btn-secondary");
 
 // loop through each button and add an event listener
-for(let i =0; i < buttons.length; i++) {
+for(let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", loadGames);
 }
 
