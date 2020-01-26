@@ -19,3 +19,8 @@
     background-color: var(--primary-colour) !important;
     border-color: var(--primary-colour) !important;
 }
+
+.counter {
+   font-weight: bold;
+   font-size: 1.1em;
+}

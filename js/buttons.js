@@ -13,3 +13,5 @@ function handleActiveClass(event) {
 
     event.target.classList.add("active");
 }
+
+console.log(new Date());
