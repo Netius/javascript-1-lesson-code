@@ -6,8 +6,6 @@ body {
 
 .container {
     margin-top: 40px;
-    display: flex;
-    flex-flow: row wrap;
 }
 
 .container.results {

@@ -20,13 +20,17 @@
     border-color: var(--primary-colour) !important;
 }
 
-.timeout {
+div.timeout {
     font-weight: bold;
     font-size: 1.1em;
 }
 
-.timeout.primary {
+div.timeout.primary {
     color: var(--primary-colour); 
+}
+
+button.timeout {
+    margin-bottom: 1em;
 }
 
 .loader {
