@@ -15,13 +15,15 @@ function loadGames() {
         const platforms = games[i].platforms;
         const platformsHTML = makePlatforms(platforms);
 
-        const details = `<div class="card">
-                            <div class="image" style="background-image: url(${games[i].background_image});"></div>
-                            <div class="details">
-                                <h4 class="name">${games[i].name}</h4>
-                                <div class="rating">${ratingValue}</div>
-                                ${genresHTML}
-                                <div class="platforms">${platformsHTML}</div>
+        const details = `<div class="col-sm-6 col-md-4 col-lg-3"> 
+                            <div class="card">
+                                <div class="image" style="background-image: url(${games[i].background_image});"></div>
+                                <div class="details">
+                                    <h4 class="name">${games[i].name}</h4>
+                                    <div class="rating">${ratingValue}</div>
+                                    ${genresHTML}
+                                    <div class="platforms">${platformsHTML}</div>
+                                </div>
                             </div>
                         </div>`;
 
