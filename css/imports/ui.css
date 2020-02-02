@@ -3,41 +3,6 @@ footer a {
     color: var(--primary-colour) !important;
 }
 
-.btn-secondary {
-    background-color: var(--grey);
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-.btn-secondary:focus,
-.btn-secondary:active {
-    background-color: var(--grey);
-    border: none;
-    box-shadow: none;
-}
-
-.btn-secondary:active:focus {
-    box-shadow: none;
-}
-
-.btn-secondary.active {
-    background-color: var(--primary-colour) !important;
-    border-color: var(--primary-colour) !important;
-}
-
-div.timeout {
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-div.timeout.primary {
-    color: var(--primary-colour);
-}
-
-button.timeout {
-    margin-bottom: 1em;
-}
-
 .loader {
     border: 16px solid #f3f3f3;
     border-top: 16px solid var(--primary-colour);
