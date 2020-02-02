@@ -51,6 +51,11 @@
     text-decoration: none;
 }
 
+.genre.active {
+    background: var(--primary-colour);
+    color: white !important;
+}
+
 .platforms {
     margin-top: 0.75em;
 }
