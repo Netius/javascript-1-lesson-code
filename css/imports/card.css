@@ -48,6 +48,7 @@
     border: var(--primary-colour);
     background: var(--primary-colour);
     color: white !important;
+    text-decoration: none;
 }
 
 .platforms {
