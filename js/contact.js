@@ -18,7 +18,6 @@ function validateForm(event) {
 
     const email = document.querySelector("#email");
     const emailError = document.querySelector("#emailError");
-    const invalidEmailError = document.querySelector("#invalidEmailError");
 
     const emailValue = email.value;
 
