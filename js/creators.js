@@ -34,7 +34,7 @@ function handleJson(json) {
                         <div class="details">
                             <h4 class="name">${result.name}</h4>
                             <p>Game count: ${result.games_count}</p>
-                            <a class="btn details" href="creator.html?id=${result.id}">Details</a>
+                            <a class="btn details" href="creator-detail.html?id=${result.id}">Details</a>
                         </div>
                     </div>
                 </div>`;
