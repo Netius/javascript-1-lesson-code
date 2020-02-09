@@ -27,8 +27,16 @@ function createCreator(json) {
     console.dir(json);
 
     const image = document.querySelector(".creator-image");
-    image.src = json.image;
     image.alt = json.name;
+
+    // set the img.src property depending on what properties are available in the JSON
+    if (json.image) {
+        image.src = json.image;
+    } else if (json.image_background) {
+        image.src = json.image_background;
+    } else {
+        image.src = "https://via.placeholder.com/250";
+    }
 
     const name = document.querySelector(".creator-name");
     name.innerHTML = json.name;
