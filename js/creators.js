@@ -22,6 +22,8 @@ function handleJson(json) {
     results.forEach(function(result) {
         let imageUrl = "https://via.placeholder.com/250";
 
+        // check if there is an image property
+        // if there isn't, check if there is an image_background property
         if (result.image) {
             imageUrl = result.image;
         } else if (result.image_background) {
