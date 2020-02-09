@@ -26,6 +26,16 @@ fetch(detailUrl)
 function createCreator(json) {
     console.dir(json);
 
+    // get the loader div
+    const loader = document.querySelector(".loader");
+    // hide the loader
+    loader.style.display = "none";
+
+    // get detail container div
+    const detailContainer = document.querySelector(".creator-detail-container");
+    // remove the hidden class
+    detailContainer.classList.remove("hidden");
+
     const image = document.querySelector(".creator-image");
     image.alt = json.name;
 
