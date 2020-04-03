@@ -32,6 +32,9 @@ function loadGames() {
     container.innerHTML = newHTML;
 }
 
+
+
+
 function makeGenres(genreArray) {
 
     let genreHTML = "";
@@ -53,3 +56,35 @@ function makePlatforms(platformsArray) {
 
     return platformsHTML;
 }
+
+function callAfterClick() {
+    console.log("What happened?");
+}
+
+const callBetterClick = function() {
+    console.log("What a fk?");
+}
+
+const button = document.querySelector(".btn.btn-primary");
+
+
+
+
+const inputText = document.querySelector(".text-input");
+
+var counter = 0;
+
+function keyReleased(event) {
+    counter++;
+    console.log("Key Release", counter);
+    console.log("name: ", event.target.name);
+    console.log("value: ", event.target.value);
+}
+inputText.addEventListener("keyup", keyReleased);
+
+
+
+
+
+button.addEventListener("click", callAfterClick);
+button.addEventListener("click", callBetterClick);
