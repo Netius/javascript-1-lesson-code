@@ -1,9 +1,9 @@
 function loadGames(event) {
-	const buttonsId = event.target.id;
+	const genre = event.target.dataset.genre;
 
 	let arrayToLoopThrough = [];
 
-	switch (buttonsId) {
+	switch (genre) {
 		case "action":
 			arrayToLoopThrough = actionGames;
 			break;
@@ -14,7 +14,8 @@ function loadGames(event) {
 			arrayToLoopThrough = rpgGames;
 			break;
 		default:
-            alert("No such thing!")
+            alert("No such thing!");
+            arrayToLoopThrough = [];
 	}
 
 	console.log(arrayToLoopThrough);
