@@ -78,3 +78,30 @@ function makePlatforms(platformsArray) {
 
     return platformsHTML;
 }
+
+const timeOutContainer = document.querySelector("div.timeout");
+const timeOutButton = document.querySelector("button.timeout");
+
+timeOutButton.addEventListener("click", updateDivAfterClick);
+
+function updateDivAfterClick(){
+    timeOutContainer.innerText = " ";
+    timeOutContainer.classList.add("loader");
+
+    setTimeout(function(){
+        timeOutContainer.innerText="Loaded";
+        timeOutContainer.classList.remove("loader");
+    
+    },3000);
+
+}
+
+
+
+
+// function updateDiv(){
+//     timeOutContainer.innerHTML = "asdas";
+//     timeOutContainer.classList.add("primary");
+// }
+
+// setTimeout(updateDiv,2000);
