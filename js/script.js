@@ -60,9 +60,9 @@ function makeGenres(genreArray) {
 
     let genreHTML = "";
 
-    for (let i = 0; i < genreArray.length; i++) {
-        genreHTML += `<a class="genre">${genreArray[i].name}</a>`;
-    }
+    genreArray.forEach(function(genre) {
+        genreHTML += `<a class="genre">${genre.name}</a>`;
+    });
 
     return genreHTML;
 }
@@ -71,9 +71,27 @@ function makePlatforms(platformsArray) {
 
     let platformsHTML = "";
 
+    platformsArray.forEach(function(platform){
+        platformsHTML += `<span>${platform.name}</span>`;
+    });
+
+
     for (let i = 0; i < platformsArray.length; i++) {
         platformsHTML += `<span>${platformsArray[i].platform.name}</span>`;
     }
 
     return platformsHTML;
 }
+
+const counterContainer = document.querySelector(".counter");
+
+function updateDiv(){
+    counterContainer.innerHTML = counter;
+    if (counter ===4){
+        clearInterval(intervalId);
+    }
+    counter++;
+}
+
+let counter = 1;
+const intervalId = setInterval(updateDiv, 1500);
