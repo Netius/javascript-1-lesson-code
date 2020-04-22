@@ -1,4 +1,6 @@
-function loadGames() {
+function loadGames(json) {
+    console.dir(json);
+    const games = json.results;
     const container = document.querySelector(".results");
     let newHTML = "";
 
