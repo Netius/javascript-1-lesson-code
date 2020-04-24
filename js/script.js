@@ -38,8 +38,15 @@ function loadGames(json) {
 function makeGenres(genreArray) {
     let genreHTML = "";
 
+
     genreArray.forEach(function(genre) {
-        genreHTML += `<a class="genre">${genre.name}</a>`;
+
+        let activeClass = "";
+        if (genres === genre.slug) {
+            activeClass = "active";
+        }
+
+        genreHTML += `<a class="genre" href="index.html?genres=${genre.slug}">${genre.name}</a>`;
     });
 
     return genreHTML;
