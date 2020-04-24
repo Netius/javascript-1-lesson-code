@@ -25,7 +25,7 @@ function loadGames(json) {
                                     <div class="rating">${ratingValue}</div>
                                     ${genresHTML}
                                     <div class="platforms">${platformsHTML}</div>
-                                    <a class="btn details">Details</a>
+                                    <a class="btn details" href="details.html?id=${games[i].id}">Details</a>
                                 </div>
                             </div>
                         </div>`;
