@@ -1,7 +1,26 @@
+var genres = "action";
+
 const baseUrl = "https://api.rawg.io/api/";
 const gamesUrl = `${baseUrl}games?genres=`;
-let genres = "action";
 const genreUrl = gamesUrl + genres;
+
+const queryString = document.location.search;
+console.log(queryString);
+
+const params = new URLSearchParams(queryString);
+console.dir(params);
+
+
+
+
+if (params.has("genres")) {
+    genres = params.get("genres");
+}
+
+
+
+
+
 
 fetch(genreUrl)
     .then(function(response) {
