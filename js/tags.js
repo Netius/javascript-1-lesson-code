@@ -4,7 +4,7 @@ function makeGenres(genreArray) {
     genreArray.forEach(function(genre) {
         let activeClass = "";
 
-        if (genres === genre.slug) {
+        if (typeof genres !== "undefined" && genres === genre.slug) {
             activeClass = "active";
         }
         genreHTML += `<a class="genre ${activeClass}" href="index.html?genres=${genre.slug}">${genre.name}</a>`;
